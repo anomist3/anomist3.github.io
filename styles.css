@@ -1,0 +1,136 @@
+/* Basic Settings */
+
+ul {
+	padding-left: 0;
+}
+
+li {
+	cursor: pointer;
+	width: 80%;
+	margin: auto;
+	font-size: 25px;
+	margin-top: 5px;
+	border-bottom: 1px solid orange;
+}
+
+/* Elements */
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	background-color: black;
+	color: lime;
+	font-family: "Poor Story", cursive;
+	height: 80vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.header {
+	margin: 30px auto;
+	width: 80vw;
+	height: 30vh;
+	padding: 50px;
+	border: 1px solid yellow;
+}
+
+.header__title {
+	border: 1px solid orange;
+	font-size: 30px;
+}
+
+.header__title span {
+	color: yellow;
+	font-size: 60px;
+}
+
+.fa-smile-wink {
+	transform: translateY(-20px);
+	color: yellow;
+}
+
+.header__description {
+	font-size: 30px;
+}
+
+.header__btn {
+	text-align: center;
+	font-size: 50px;
+	color: yellow;
+}
+
+.header__btn:hover {
+	transform: scale(1.1);
+	color: tomato;
+}
+
+.question-box {
+	width: 80vw;
+	margin: 30px auto;
+	border: 1px solid orange;
+}
+
+.select-bar {
+	margin: 0 auto;
+	display: none;
+	border: 1px solid yellow;
+	width: 80vw;
+}
+
+.select-bar li {
+	margin: 10px auto;
+}
+
+.select-bar li:hover {
+	transform: scale(1.1);
+}
+
+.result {
+	font-size: 30px;
+	margin: 150px auto;
+}
+
+.display--show {
+	display: block;
+}
+
+.display--hide {
+	display: none;
+}
+
+.question--display {
+	display: block;
+	text-align: center;
+	margin: 15px auto;
+	color: whitesmoke;
+	font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		width: 65vw;
+		height: 60vh;
+	}
+
+	.header .fa-smile-wink {
+		display: none;
+	}
+
+	.select-bar {
+		width: 80vw;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		margin-top: 5px;
+		width: 70vw;
+		font-size: 30px;
+	}
+}
