@@ -87,6 +87,7 @@ body {
 
 .select-bar li:hover {
 	transform: scale(1.1);
+	color: beige;
 }
 
 .result {
